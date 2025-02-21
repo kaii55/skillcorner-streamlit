@@ -8,8 +8,8 @@ from skillcornerviz.utils import skillcorner_physical_utils as p_utils
 from skillcorner.client import SkillcornerClient
 
 # API Credentials
-USERNAME = os.getenv("SKILLCORNER_USERNAME", "analysis_interview@skillcorner.com")
-PASSWORD = os.getenv("SKILLCORNER_PASSWORD", "ABtqL3h2cgdaaNS")
+USERNAME = st.secrets["credentials"]["SKILLCORNER_USERNAME"]
+PASSWORD = st.secrets["credentials"]["SKILLCORNER_PASSWORD"]
 BASE_URL = "https://skillcorner.com/api"
 
 # Function to fetch competition editions
